@@ -1,6 +1,6 @@
 services:
   web:
-    build: .
+    image: thm63/intellinetworks-solution:ci
     container_name: intellinetworks-web
     ports:
       - "8081:80"
