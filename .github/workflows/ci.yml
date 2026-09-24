@@ -19,5 +19,9 @@ jobs:
       - name: Run Docker container
         run: docker run -d --name intellinetworks-ci -p 8080:80 intellinetworks-solution:ci
 
+      - name: Wait for website
+        run: sleep 3
+
+
       - name: Test website
         run: curl -f http://localhost:8080
